@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Number Guess</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link href="style/style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!--     <header class="bg-light text-center p-4 m-3 text-dark rounded"> -->
+    <header class="bg-dark text-center p-4 m-3 rounded">
+
+        <h1>Number Guess</h1>  
+    </header>
+
+    <div class="card">
+        <div class="card-body">
+            <h2>Guess a Number Between 1 - 99</h2>
+            <h3>You only get 7 attempts</h3>
+            Enter a Number:
+            <br>
+            <input type="number" id="guess">
+            <br>
+            <br>
+            <button onclick="checkNumber()" type ="button" class="btn btn-dark">Guess!
+            <button onclick="reset()" type ="button" class="btn btn-dark">NEW GAME
+        </div>
+        Hit the "NEW GAME" button to play again
+    </div>
+    <div class="card">
+        <div id="playerGuesses" class="card-body">
+            
+        </div>
+    </div>
+    <div class="card">
+        <div id="WinsnLosses" class="card-body">
+            
+        </div>
+    </div>
+    <div class="card">
+        <div id="Wins" class="card-body">
+            Wins: 
+        </div>
+        
+        <div id= "Loss" class="card-body">
+            Losses:
+        </div>
+  </div> 
+
+    
+    
+  <script src="js/script.js"></script>
+ 
+</body>
+
+</html>
